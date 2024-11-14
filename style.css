@@ -1,0 +1,107 @@
+:root {
+    --Green: hsl(75, 94%, 57%);
+
+    --White: hsl(0, 0%, 100%);
+
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+@font-face {
+    font-family: "Inter";
+    src: local("Inter"),
+    url("assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+    font-weight: 400 600 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "Inter", serif;
+    font-size: 14px;
+    background-color: var(--Grey-900);
+}
+
+main {
+    width: 20%;
+    margin: 10% auto;
+    background-color: var(--Grey-800);
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+button {
+    width: 100%;
+    padding: 16px ;
+    background-color: var(--Grey-700);
+    color: var(--White);
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    transition: all .4s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--Green);
+    color: var(--Grey-900);
+}
+
+button:focus {
+    background-color: var(--Green);
+    color: var(--Grey-900);
+    opacity: .5;
+}
+
+img {
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+h1, h3 {
+    font-weight: 600;
+    margin: 0;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: var(--Green);
+}
+
+.btn__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+@media (max-width: 1300px) {
+    main {
+        width: 30%;
+    }
+}
+
+@media (max-width: 870px) {
+    main {
+        width: 50%;
+    }
+}
+
+@media (max-width: 530px) {
+    main {
+        width: 70%;
+        font-size: 12px;
+    }
+}
+
+
+
+
+
